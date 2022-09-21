@@ -28,7 +28,7 @@ public class ControllerLogin {
 
     public void loginButtonOnAction(ActionEvent e) {
         if (!usernameTextField.getText().isBlank() && !passwordPasswordField.getText().isBlank()) {
-            // loginMessageLable.setText("You try to login!");
+            loginMessageLable.setText("You try to login!");
             validateLogin();
         } else {
             loginMessageLable.setText("Please enter username and password.");

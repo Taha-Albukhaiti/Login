@@ -55,12 +55,13 @@
          </font>
       </Label>
       <TextField fx:id="emailTextField" layoutX="80.0" layoutY="335.0" prefHeight="25.0" prefWidth="370.0" promptText="Email" />
-      <Button fx:id="registerButton" layoutX="80.0" layoutY="500.0" mnemonicParsing="false" prefWidth="370.0" style="-fx-background-color: #050A30#050A30 #050A30#050A30;" text="Register" textFill="WHITE" />
+      <Button fx:id="registerButton" layoutX="80.0" layoutY="500.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefWidth="370.0" style="-fx-background-color: #050A30#050A30 #050A30#050A30;" text="Register" textFill="WHITE" />
       <Button fx:id="closeButton" layoutX="80.0" layoutY="540.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefWidth="370.0" style="-fx-background-color: #050A30#050A30 #050A30#050A30;" text="Close" textFill="WHITE" />
-      <Label layoutX="14.0" layoutY="103.0" prefHeight="17.0" prefWidth="493.0" textFill="#ff4141">
-         <font>
-            <Font size="12.0" />
-         </font>
-      </Label>
+      <Label fx:id="registrationMessageLabel" alignment="CENTER" layoutX="14.0" layoutY="113.0" prefHeight="17.0" prefWidth="493.0" textFill="#050a30" />
+      <Label fx:id="confirmPasswordLabel" alignment="CENTER" layoutX="250.0" layoutY="431.0" prefHeight="17.0" prefWidth="200.0" textFill="#fc8585" />
+      <Label fx:id="firstnameLabel" alignment="CENTER" layoutX="250.0" layoutY="131.0" prefHeight="17.0" prefWidth="200.0" textFill="#fc8585" />
+      <Label fx:id="lastnameLabel" alignment="CENTER" layoutX="250.0" layoutY="191.0" prefHeight="17.0" prefWidth="200.0" textFill="#fc8585" />
+      <Label fx:id="usernameLabel" alignment="CENTER" layoutX="250.0" layoutY="251.0" prefHeight="17.0" prefWidth="200.0" textFill="#fc8585" />
+      <Label fx:id="emailLabel" alignment="CENTER" layoutX="250.0" layoutY="312.0" prefHeight="17.0" prefWidth="200.0" textFill="#fc8585" />
    </children>
 </AnchorPane>
