@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login.ControllerLogin">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="228.0" style="-fx-background-color: #050A30#050A30;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="159.0" prefHeight="17.0" prefWidth="228.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="24.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="234.0" prefHeight="17.0" prefWidth="228.0" text="Label" textFill="WHITE">
+               <font>
+                  <Font name="Apple Braille Outline 6 Dot" size="22.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Line endX="93.5" layoutX="114.0" layoutY="205.0" startX="-91.5" stroke="WHITE" strokeWidth="2.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Line>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="463.0" prefHeight="17.0" prefWidth="228.0" text="Copyright (c). All Rights Reserved" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Circle fill="#ffffff00" layoutX="115.0" layoutY="205.0" radius="100.0" stroke="WHITE" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="375.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="66.0" layoutY="94.0" prefHeight="17.0" prefWidth="228.0" text="Secure Login" textFill="#050a30">
+               <font>
+                  <Font name="Apple Braille Outline 6 Dot" size="24.0" />
+               </font>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Label>
+            <Label layoutX="43.0" layoutY="169.0" text="Username">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="209.0" text="Password">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" layoutX="138.0" layoutY="166.0" prefHeight="26.0" prefWidth="186.0" promptText="Username" />
+            <PasswordField fx:id="passwordPasswordField" layoutX="139.0" layoutY="206.0" prefHeight="26.0" prefWidth="185.0" promptText="Password" />
+            <Button fx:id="loginButton" layoutX="43.0" layoutY="272.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="37.0" prefWidth="283.0" style="-fx-background-color: #050A30#050A30 #050A30#050A30;" text="Log in" textFill="WHITE" />
+            <Button fx:id="cancelButton" layoutX="43.0" layoutY="337.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="36.0" prefWidth="285.0" style="-fx-background-color: #050A30#050A30 #050A30#050A30;" text="Cancel" textFill="WHITE" />
+            <Label fx:id="loginMessageLable" alignment="CENTER" layoutX="24.0" layoutY="139.0" prefHeight="18.0" prefWidth="323.0" textFill="#e42121" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
